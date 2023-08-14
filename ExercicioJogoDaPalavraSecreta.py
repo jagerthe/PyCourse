@@ -1,3 +1,5 @@
+#import os
+
 palavra = 'cabide'
 letras_acertadas = ['*'] * len(palavra)
 tentativas = 6
@@ -35,6 +37,7 @@ while '*' in letras_acertadas and tentativas > 0:
         print('Algo deu errado....')
 
 if '*' not in letras_acertadas:
+    #os.system('clear')
     print(f'Parabens, voce acertou! A palavra era = {palavra}!')
 else:
     print('Voce nao conseguiu...')
